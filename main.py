@@ -1,5 +1,4 @@
 from cv2 import cv2
-import sys
 
 # colorset_64 = "MWN$@%#&B89EGA6mK5HRkbYT43V0JL7gpaseyxznocv?jIftr1li*=-~^`':;,. "
 colorset_32 = "MWN$@%#&B8gpasenocv?jIli*=-~^`. "
@@ -29,7 +28,6 @@ if __name__ == "__main__":
                 output += colorset_32[dark // 8] * 2
 
         print('\r' + output)
-        sys.stdout.flush()
 
     # After the loop release the cap object
     vid.release()
